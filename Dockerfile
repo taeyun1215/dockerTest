@@ -1,4 +1,4 @@
 FROM amazoncorretto:11
-ARG JAR_FILE=build/libs/mkc.jar
+ARG JAR_FILE=./build/libs/mkc.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]

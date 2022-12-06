@@ -1,4 +1,4 @@
-# 가동중인 awsstudy 도커 중단 및 삭제
+# 가동중인 mkc 도커 중단 및 삭제
 sudo docker ps -a -q --filter "name=mkc" | grep -q . && docker stop mkc && docker rm mkc | true
 
 # 기존 이미지 삭제
